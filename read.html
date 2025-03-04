@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Messages</title>
+  </head>
+  <body>
+    <h1>Збережені повідомлення</h1>
+    <ul>
+      {% for timestamp, message in messages.items() %}
+      <li>
+        <strong>{{ timestamp }}</strong
+        >: {{ message.username }} says: {{ message.message }}
+      </li>
+      {% else %}
+      <li>Немає збережених повідомлень.</li>
+      {% endfor %}
+    </ul>
+    <a href="/">На головну</a>
+  </body>
+</html>
