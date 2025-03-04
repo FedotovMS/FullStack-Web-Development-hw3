@@ -1,0 +1,73 @@
+# Исключить виртуальное окружение
+.env
+.venv
+venv/
+env/
+myenv/
+
+
+
+# Компилированные Python файлы
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Логи и дампы ошибок
+*.log
+*.pot
+*.pid
+*.gz
+*.log.*
+
+# Исключить данные IDE и редакторов
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Исключить пакеты и кэш
+*.egg
+*.egg-info/
+*.eggs/
+dist/
+build/
+wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Исключить файлы тестов
+.coverage
+.tox/
+.pytest_cache/
+htmlcov/
+
+# Исключить конфигурационные файлы OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Исключить результаты профилирования
+.prof
+*.profraw
+
+# Исключить файлы с паролями и секретами (если есть)
+*.env
+*.key
+*.crt
+*.pem
+
+# Исключить временные файлы
+*.tmp
+*.temp
+
+# Исключить настройки Docker (если используется)
+docker-compose.override.yml
+
+# Исключить файлы хранения
+*.pkl
